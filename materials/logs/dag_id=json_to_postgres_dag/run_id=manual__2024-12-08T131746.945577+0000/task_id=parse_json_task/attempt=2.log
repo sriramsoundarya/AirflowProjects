@@ -1,0 +1,32 @@
+[2024-12-08T13:22:50.170+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: json_to_postgres_dag.parse_json_task manual__2024-12-08T13:17:46.945577+00:00 [queued]>
+[2024-12-08T13:22:50.182+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: json_to_postgres_dag.parse_json_task manual__2024-12-08T13:17:46.945577+00:00 [queued]>
+[2024-12-08T13:22:50.183+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-08T13:22:50.183+0000] {taskinstance.py:1363} INFO - Starting attempt 2 of 2
+[2024-12-08T13:22:50.184+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2024-12-08T13:22:50.199+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): parse_json_task> on 2024-12-08 13:17:46.945577+00:00
+[2024-12-08T13:22:50.204+0000] {standard_task_runner.py:55} INFO - Started process 368 to run task
+[2024-12-08T13:22:50.207+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'json_to_postgres_dag', 'parse_json_task', 'manual__2024-12-08T13:17:46.945577+00:00', '--job-id', '2566', '--raw', '--subdir', 'DAGS_FOLDER/demo.py', '--cfg-path', '/tmp/tmprg5gz42s']
+[2024-12-08T13:22:50.208+0000] {standard_task_runner.py:83} INFO - Job 2566: Subtask parse_json_task
+[2024-12-08T13:22:50.265+0000] {task_command.py:376} INFO - Running <TaskInstance: json_to_postgres_dag.parse_json_task manual__2024-12-08T13:17:46.945577+00:00 [running]> on host ece2bbff80df
+[2024-12-08T13:22:50.332+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=json_to_postgres_dag
+AIRFLOW_CTX_TASK_ID=parse_json_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-12-08T13:17:46.945577+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-12-08T13:17:46.945577+00:00
+[2024-12-08T13:22:50.333+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/demo.py", line 30, in parse_json_to_record
+    json_path = os.path.join(script_dir, "employee.json")
+NameError: name 'script_dir' is not defined
+[2024-12-08T13:22:50.342+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=json_to_postgres_dag, task_id=parse_json_task, execution_date=20241208T131746, start_date=20241208T132250, end_date=20241208T132250
+[2024-12-08T13:22:50.355+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 2566 for task parse_json_task (name 'script_dir' is not defined; 368)
+[2024-12-08T13:22:50.380+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2024-12-08T13:22:50.399+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

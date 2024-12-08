@@ -1,0 +1,75 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": {
+        "first": "John",
+        "last": "Doe"
+      },
+      "contact": {
+        "email": "john.doe@example.com",
+        "phone": "123-456-7890"
+      },
+      "address": {
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001"
+      },
+      "skills": [
+        {
+          "name": "Python",
+          "experience": 5
+        },
+        {
+          "name": "SQL",
+          "experience": 3
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "P001",
+          "project_name": "Data Pipeline",
+          "duration": "6 months"
+        },
+        {
+          "project_id": "P002",
+          "project_name": "ETL Optimization",
+          "duration": "3 months"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": {
+        "first": "Jane",
+        "last": "Smith"
+      },
+      "contact": {
+        "email": "jane.smith@example.com",
+        "phone": "987-654-3210"
+      },
+      "address": {
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94105"
+      },
+      "skills": [
+        {
+          "name": "Java",
+          "experience": 4
+        },
+        {
+          "name": "Big Data",
+          "experience": 2
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "P003",
+          "project_name": "Cloud Migration",
+          "duration": "8 months"
+        }
+      ]
+    }
+  ]
+}

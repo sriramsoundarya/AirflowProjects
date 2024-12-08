@@ -1,0 +1,11 @@
+[2024-11-24T12:52:57.140+0000] {processor.py:154} INFO - Started process (PID=78) to work on /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2024-11-24T12:52:57.142+0000] {processor.py:756} INFO - Processing file /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_time_delta_sensor_async.py for tasks to queue
+[2024-11-24T12:52:57.143+0000] {logging_mixin.py:120} INFO - [2024-11-24T12:52:57.143+0000] {dagbag.py:537} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2024-11-24T12:52:57.182+0000] {processor.py:766} INFO - DAG(s) dict_keys(['example_time_delta_sensor_async']) retrieved from /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_time_delta_sensor_async.py
+[2024-11-24T12:52:58.626+0000] {logging_mixin.py:120} INFO - [2024-11-24T12:52:58.626+0000] {manager.py:507} INFO - Created Permission View: can delete on DAG:example_time_delta_sensor_async
+[2024-11-24T12:52:58.675+0000] {logging_mixin.py:120} INFO - [2024-11-24T12:52:58.674+0000] {manager.py:507} INFO - Created Permission View: can edit on DAG:example_time_delta_sensor_async
+[2024-11-24T12:52:58.709+0000] {logging_mixin.py:120} INFO - [2024-11-24T12:52:58.708+0000] {manager.py:507} INFO - Created Permission View: can read on DAG:example_time_delta_sensor_async
+[2024-11-24T12:52:58.710+0000] {logging_mixin.py:120} INFO - [2024-11-24T12:52:58.710+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-11-24T12:52:58.766+0000] {logging_mixin.py:120} INFO - [2024-11-24T12:52:58.766+0000] {dag.py:2606} INFO - Creating ORM DAG for example_time_delta_sensor_async
+[2024-11-24T12:52:58.811+0000] {logging_mixin.py:120} INFO - [2024-11-24T12:52:58.809+0000] {dag.py:3340} INFO - Setting next_dagrun for example_time_delta_sensor_async to None, run_after=None
+[2024-11-24T12:52:58.857+0000] {processor.py:176} INFO - Processing /home/airflow/.local/lib/python3.7/site-packages/airflow/example_dags/example_time_delta_sensor_async.py took 1.738 seconds
